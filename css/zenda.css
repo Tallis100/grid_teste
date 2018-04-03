@@ -1,37 +1,28 @@
-.container {
+html, body {
    
+}
+
+.container {
+   display: grid;
+
     
 }
 
 nav ul {
+    margin: 0; padding: 0;
     list-style: none;
     display: grid;
-    grid-template-columns: repeat(4, 1fr)
-}
-nav ul li {
+    grid-gap: 10px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 50px;
+    
     
 }
+nav ul li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: mediumvioletred;
+}
 
-
-
-/* nav grid */
-.nav {
-    display: grid;
-    grid-template-columns: repeat(4, 10px);
-    grid-template-rows: 100px;
-    grid-gap: 20px;
-    background: aqua;
-}
-nav ul li.home {
-    grid-column: 1 / -1;
-}
-nav ul li.about {
-    grid-column: 1;
-}
-nav ul li.services {
-    grid-column: 1;
-}
-nav ul li.contact {
-    grid-column: 1;
-}
 
